@@ -3,7 +3,7 @@ Immertec's takehome challenge
 
 # Your mission
 
-Hey Web Application Developer! Your mission, should you choose to accept it, is to carve out 2 hours and create a simple React application using a API service defined below.
+Hey Web Application Developer! Your mission, should you choose to accept it, is to carve out 2 hours and create a simple React application using an API service defined below.
 
 > It's important that you spend about two hours (and not too much more!) on this project. If you can finish faster -- great! If not, no worries. Submit what you have.
 
@@ -11,7 +11,7 @@ Hey Web Application Developer! Your mission, should you choose to accept it, is 
 
 The home page of your app shows a list of upcoming launches. You decide how you want to order the launches and how they are displayed.
 
-A user should be able to click on a launch in the list to display additional details about the launch. The API includes many other pieces of information which you can choose to include on this page.
+A user should be able to click on a launch in the list to display additional details about the launch. The API includes many other pieces of information that you can choose to include on this page.
 
 Once finished, send your solution files to casey@immertec.com or push up to a GitHub repository for review.
 
