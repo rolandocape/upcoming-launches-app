@@ -37,6 +37,7 @@ module.exports = {
   plugins: [new webpack.HotModuleReplacementPlugin()],
   devServer: {
     contentBase: "./dist",
-    hot: true
+    hot: true,
+    historyApiFallback: true, // <- Needed to allow router reloads in the client side
   }
 };

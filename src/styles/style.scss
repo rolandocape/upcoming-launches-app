@@ -1,17 +1,44 @@
 body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  min-height: 10vh;
   background: #333333;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-size: 16px;
-}
 
-#container {
-  text-align: center;
-  padding: 4rem;
+  h3 {
+    margin-top: 0;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  nav {
+    float: right;
+    ul {
+      list-style-type: none;
+      margin: 5px 15px 0 0;
+      display: flex;
+
+      li {
+        padding: 0 5px;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          background: lighten(#333333, 5%);
+        }
+      }
+    }
+   }
 
   img {
-    margin-top: 4rem;
-    width: 50rem;
-    max-width: 80%;
+    width: 10rem;
+    max-width: 15%;
   }
+
+
 }

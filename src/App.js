@@ -1,12 +1,28 @@
 import React from "react";
 import "./styles/style.scss";
-import logo from "./images/medoptic-logo.png";
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
-const App = () => (
-  <div id="container">
-    <h1>Immertec App Boilerplate</h1>
-    <img src={logo} />
-  </div>
-);
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import LaunchDetails from "./components/LaunchDetails/LaunchDetails";
+
+const App = () => {
+    return (
+        <Router>
+            <div>
+                <Navbar/>
+                <Switch>
+                    <Route path="/" exact component={Home}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/launches/:id" component={LaunchDetails}/>
+                    <Route path="*">
+                        <Redirect to="/" />
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
+    );
+};
 
 export default App;

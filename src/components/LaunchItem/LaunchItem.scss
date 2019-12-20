@@ -1,0 +1,9 @@
+.launch-style {
+  background: white;
+  border: 1px #ccc solid;
+  cursor: pointer;
+  padding-left: 20px;
+  &:hover {
+    background: darken(white, 10%);
+  }
+}
